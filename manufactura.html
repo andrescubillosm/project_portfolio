@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <h1><span>Hoja de Vida & Portafolio de Proyectos destacados</span></h1>
+
+    <header>
+        <section>
+            <a href="https://www.linkedin.com/in/carlos-andres-cubillos-ba469a120/" id="logo" target="_blank">Andrés
+                Cubillos</a>
+
+            <label for="toggle-1" class="toggle-menu">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </label>
+            <input type="checkbox" id="toggle-1">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="icon-home"></i>Home </a></li>
+                    <li><a href="retail.html"><i class="icon-user"></i>Retail </a></li>
+                    <li><a href="seguros.html"><i class="icon-thumbs-up-alt"></i>Seguros </a></li>
+                    <li><a href="manufactura.html"><i class="icon-gear"></i>Manufactura </a></li>
+                    <li><a href="servicios.html"><i class="icon-picture"></i>Servicios </a></li>
+                    <li><a href="negocios.html"><i class="icon-picture"></i>Negocios </a></li>
+                    <li><a href="consultoria.html"><i class="icon-phone"></i>Consultoria </a></li>
+                    <li><a href="certificaciones.html"><i class="icon-phone"></i>Certificaciones </a></li>
+                </ul>
+            </nav>
+    </header>
+
+    </section>
+
+    <section id="about" class="content">
+        <h2>Sobre la empresa</h2>
+        <p>Corona es una corporación multinacional dedicada a la manufactura, la distribución de productos y soluciones
+            para la remodelación y construcción. Fue fundada en 1881 en Caldas, Antioquia, Colombia.
+
+            Corona tiene más de 15 000 empleados y 29 fábricas en Estados Unidos, México, Centro América, Colombia y
+            Brasil 1​ y seis unidades de negocios que despachan productos y soluciones para el hogar y la construcción
+            en más de 50 mercados alrededor del mundo.
+
+        </p>
+
+
+        <ul class="galeria clip">
+
+            <li>
+                <a href=""><img src="assets\CORONA.jpg" alt="image" width="291" height="215"></a>
+            </li>
+        </ul>
+
+    </section>
+
+
+
+
+
+
+    <button class="accordion"><strong>Proyecto Avanza</strong> </button>
+    <div class="panel">
+
+        <div class="container">
+
+            <div class="imagen">
+
+                <img src="assets\avanza.jpg" align="right" width="40%">
+
+            </div>
+
+            <div class="parrafo">
+                <strong>Propósito del proyecto:</strong> Desarrollar e implementar la solución de consultoría de
+                procesos
+                y sistema de información de optimización de Supply Chain para los negocios de la
+                Organización Corona, logrando sinergias y estandarizando buenas prácticas,
+                para apoyar el desarrollo de la competencia corporativa de Supply Chain y
+                el Road Map de Tecnologías de Información.<br>
+
+                <br> <strong>Solución:</strong> Implementación SCM Oracle y procesos documentados<br>
+
+                <br> <strong> Componente TI </strong>: Implementación de SCM con servidores en la nube <br>
+
+                <br> <strong> Resultados: </strong> Ahorros en capacidades y tiempos por 1500 millones de pesos al año
+                <br>
+                <br> <strong> Costo del proyecto: </strong> 10 Millones de dólares<br>
+                <br> <strong> Duración del proyecto: </strong> 30 meses.<br>
+                <br> <strong> Rol: </strong> Líder de proyecto PMO <br>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+    <br>
+    <br>
+
+
+
+
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+
+
+    <div class='contenedor-imagen'>
+
+
+
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <section id="footer" class="content-2">
+        <center>
+            <p>© 2021 Copyright Andres Cubillos</p>
+        </center>
+    </section>
+</body>
+
+</html>

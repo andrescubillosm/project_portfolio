@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <h1><span>Hoja de Vida & Portafolio de Proyectos destacados</span></h1>
+
+    <header>
+        <section>
+            <a href="https://www.linkedin.com/in/carlos-andres-cubillos-ba469a120/" id="logo" target="_blank">Andrés
+                Cubillos</a>
+
+            <label for="toggle-1" class="toggle-menu">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </label>
+            <input type="checkbox" id="toggle-1">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="icon-home"></i>Home </a></li>
+                    <li><a href="retail.html"><i class="icon-user"></i>Retail </a></li>
+                    <li><a href="seguros.html"><i class="icon-thumbs-up-alt"></i>Seguros </a></li>
+                    <li><a href="manufactura.html"><i class="icon-gear"></i>Manufactura </a></li>
+                    <li><a href="servicios.html"><i class="icon-picture"></i>Servicios </a></li>
+                    <li><a href="negocios.html"><i class="icon-picture"></i>Negocios </a></li>
+                    <li><a href="consultoria.html"><i class="icon-phone"></i>Consultoria </a></li>
+                    <li><a href="certificaciones.html"><i class="icon-phone"></i>Certificaciones </a></li>
+                </ul>
+            </nav>
+    </header>
+
+    </section>
+
+    <section id="about" class="content">
+        <h2>Sobre la empresa</h2>
+        <p>Con la adquisición de Skandia Seguros Generales, Liberty Seguros llegó a Colombia en 1997, hace 20 años.
+            Después de eso, sumó a sus operaciones las del grupo Latinoamericana de Seguros, Seguros Colmena y en
+            2002, sumó la cartera de ABN Amro Seguros. Hoy la firma factura casi $1 billón en ventas de pólizas.
+
+            Por tal razón, Liberty se consolidó como una de las más importantes empresas aseguradoras del país,
+            afirmó Luiz Francisco Campos, presidente de la compañía.
+
+            El ejecutivo agregó que “en los últimos 20 años nos hemos convertido en un referente en el sector
+            asegurador colombiano, por nuestro alto nivel de compromiso con nuestros asegurados, bajo la premisa de
+            que en Liberty resolvemos”.
+
+            Una de las estrategias de la aseguradora para seguir creciendo en el país fue reforzar sus
+            vicepresidencias con ejecutivos de amplia trayectoria en sus sectores, que vienen de trabajar en
+            mercados como el de Venezuela, España o Vietnam, afirmó la compañía
+
+            Vale mencionar que durante los últimos 17 años de operación, la compañía ha recibido la calificación AAA
+            por parte de Fitch Ratings.
+
+        </p>
+
+
+        <ul class="galeria clip">
+
+            <li>
+                <a href=""><img src="assets\1418240Liberty-Seguros.jpg" alt="image" width="291" height="215"></a>
+            </li>
+        </ul>
+
+    </section>
+
+
+
+
+    <div class="grupo">
+
+        <h4>Proyectos</h4>
+
+    </div>
+
+    <button class="accordion"><strong>Proyecto Core de Negocio</strong> </button>
+    <div class="panel">
+
+        <div class="container">
+
+            <div class="parrafo">
+                <strong>Propósito del proyecto:</strong> Cambiar todos los sistemas de Liberty seguros a unos mas
+                modernos e intégralos en una sola plataforma.<br>
+
+                <br> <strong>Mi rol en el proyecto:</strong> Análisis de los procesos de Reaseguros, Seguros de Vida,
+                Automóviles y SOAT, para determinar los requisitos de funcionalidad inicial, con el objetivo de realizar
+                un RFP y localizar un proveedor internacional que asumiera el reto de hacer todos los desarrollos y la
+                migración de información.<br>
+
+                <br> <strong> Duración del proyecto: </strong> 12 meses.<br>
+                <br> <strong> Rol: </strong> Líder de proceso <br>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <button class="accordion"><strong>Mejoramiento Expedición pólizas automóviles y SOAT</strong> </button>
+    <div class="panel">
+
+        <div class="container">
+
+            <div class="parrafo">
+                <strong>Propósito del proyecto:</strong> Analizar oportunidades de mejora de los procesos de expedición
+                de pólizas y proponer mejoras.<br>
+
+                <br> <strong>Mi rol en el proyecto:</strong> Mediante técnicas de datos, entrevistas y análisis de
+                Pareto y cargas de trabajo, se determinaron oportunidades de mejora y posibilidades de sistematizar
+                temporalmente actividades que evitaran reprocesos y manejo documental.
+                Se implantó inicialmente una mesa de expedición para el análisis de documentos y cumplimiento de
+                requisitos.
+                <br>
+
+                <br> <strong> Duración del proyecto: </strong> 4 meses.<br>
+                <br> <strong> Rol: </strong> Líder de proceso <br>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    <br>
+    <br>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+
+
+    <div class='contenedor-imagen'>
+
+    </div>
+
+
+    <section id="footer" class="content-2">
+        <center>
+            <p>© 2021 Copyright Andres Cubillos</p>
+        </center>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
